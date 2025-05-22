@@ -1,5 +1,8 @@
 <dialog id="isdigit_modal" class="modal">
     <div class="modal-box">
+        <form method="dialog">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+        </form>
         <h3 class="font-bold text-lg">isdigit()</h3>
         <p class="py-4">
             The <code class="text-accent">isdigit()</code> string method will check if a variable is numeric and return a 
@@ -27,48 +30,20 @@ print(var2.isdigit())
 
                 <!-- START OF OUTPUT MOCKUP WINDOW -->
                 <div class="text-xs">
-                    <div class="mockup-code" style="padding-left: 1rem;">
+                    <div class="mockup-code" style="">
                         <!-- Python output goes here -->
                         <pre id="output_isdigit" class=""></pre>
                     </div>
                 </div>
             </div>
 
-            <script type="text/python">
-from browser import document
-import io
-import sys
-
-def isdigit_runCode(event):
-    # Capture print output using StringIO
-    output_capture = io.StringIO()
-    sys.stdout = output_capture
-
-    # Python code to execute
-    code = """
-var1 = "1"
-var2 = "one"
-print(var1.isdigit())
-print(var2.isdigit())
-    """
-
-    # Execute the code
-    exec(code, globals(), locals())
-
-    # Reset stdout back to default
-    sys.stdout = sys.__stdout__
-
-    # Get the captured output
-    output = output_capture.getvalue()
-
-    # Update the output element
-    document["output_isdigit"].text = output
-
-    # Bind the button click event to runCode function
-    document["isdigit_runCode"].bind("click", isdigit_runCode)
+            <script type="text/javascript">
+                function isdigit_runCode(){
+                    document.getElementById("output_isdigit").innerHTML = "True\n  False";
+                }
             </script>
 
-            <button class="btn btn-primary btn-sm" id="isdigit_runCode">Run Code</button>
+            <button class="btn btn-primary btn-sm" onclick="isdigit_runCode()">Run Code</button>
 
             <!-- END OF OUTPUT MOCKUP WINDOW -->
         </p>

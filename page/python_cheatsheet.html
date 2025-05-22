@@ -6,6 +6,7 @@ layout: brython
 <br>
 
 <p class="text-center text-l">Click on the buttons to help you with particular Python skills</p>
+<p>A big thanks goes out to my year 10,11 and 12 students who helped contribute by creating many of the modals on this page.</p>
 
 <br> 
 
@@ -37,8 +38,8 @@ layout: brython
         <button class="btn btn-primary btn-xs mb-1" onclick="print_modal.showModal()">printing</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="casting_modal.showModal()">casting</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="lost_modal.showModal()">escape codes</button>
-        <button class="btn btn-primary btn-xs mb-1" onclick="simple_f_string_modal.showModal()">f-strings 1</button>
-        <button class="btn btn-primary btn-xs mb-1" onclick="lost_modal.showModal()">f-strings 2</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="simple_f_string_modal.showModal()">f-strings</button>
+        <!-- <button class="btn btn-primary btn-xs mb-1" onclick="lost_modal.showModal()">f-strings 2</button> -->
         <button class="btn btn-primary btn-xs mb-1" onclick="comments_modal.showModal()">comments</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="round_modal.showModal()">rounding</button>
       </p>
@@ -56,6 +57,7 @@ layout: brython
         <button class="btn btn-primary btn-xs mb-1" onclick="lower_upper_modal.showModal()">lower/upper</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="isupper_lower_modal.showModal()">islower/ isupper</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="isdigit_modal.showModal()">isdigit</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="isalpha_modal.showModal()">isalpha</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="in_not_in_modal.showModal()">in / not in</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="count_modal.showModal()">count</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="replace_modal.showModal()">replace function</button>
@@ -73,6 +75,8 @@ layout: brython
         <button class="btn btn-primary btn-xs mb-1" onclick="input_modal.showModal()">Input String</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="int_inp_modal.showModal()">Input Integer</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="float_input_modal.showModal()">Input Float</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="while_input_validation_modal.showModal()">Input Validation</button>
+        
       </p>
     </div>
   </div>
@@ -99,7 +103,7 @@ layout: brython
       <p>
         <button class="btn btn-primary btn-xs mb-1" onclick="if_else_modal.showModal()">If</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="elif_modal.showModal()">Elif (Else if)</button>
-        <button class="btn btn-primary btn-xs mb-1" onclick="lost_modal.showModal()">Ternary Operator</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="ternary_operators_modal.showModal()">Ternary Operators</button>
       </p>
     </div>
   </div>
@@ -115,6 +119,7 @@ layout: brython
         <button class="btn btn-primary btn-xs mb-1" onclick="range_modal.showModal()">range</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="while_modal.showModal()">While</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="lost_modal.showModal()">Nested Loops</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="inline_for_modal.showModal()">Inline For</button>
       </p>
     </div>
   </div>
@@ -126,8 +131,8 @@ layout: brython
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" class="h-6 w-6"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 96c0-35.3 28.7-64 64-64l384 0c35.3 0 64 28.7 64 64l0 256-64 0 0-256L128 96l0 256-64 0L64 96zM0 403.2C0 392.6 8.6 384 19.2 384l601.6 0c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8L76.8 480C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
        Functions</h2>
       <p>
-        <button class="btn btn-primary btn-xs mb-1" onclick="lost_modal.showModal()">Procedures</button>
-        <button class="btn btn-primary btn-xs mb-1" onclick="lost_modal.showModal()">Functions</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="procedure_modal.showModal()">Procedures</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="function_modal.showModal()">Functions</button>
       </p>
     </div>
   </div>
@@ -144,7 +149,7 @@ layout: brython
         <button class="btn btn-primary btn-xs mb-1" onclick="pop_modal.showModal()">pop/remove item</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="index_modal.showModal()">Lists Indexing</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="lost_modal.showModal()">List slicing</button>
-        <button class="btn btn-primary btn-xs mb-1" onclick="lost_modal.showModal()">2D Arrays</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="twoD_arrays_modal.showModal()">2D Arrays</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="tuple_modal.showModal()">Tuples</button>
       </p>
     </div>
@@ -190,6 +195,8 @@ layout: brython
       <p>
         <button class="btn btn-primary btn-xs mb-1" onclick="randint_modal.showModal()">randint</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="random_sample_modal.showModal()">random sample</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="math_floor_modal.showModal()">maths.floor</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="math_ceil_modal.showModal()">maths.ceil</button>
       </p>
     </div>
   </div>
@@ -202,11 +209,13 @@ layout: brython
       Miscellaneous skills</h2>
       <p>
         <button class="btn btn-primary btn-xs mb-1" onclick="quit_modal.showModal()">quit a program</button>
-        <button class="btn btn-primary btn-xs mb-1" onclick="lost_modal.showModal()">Writing to Files</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="sleep_modal.showModal()">Sleep function</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="clear_screen_modal.showModal()">Clear screen function</button>
         <button class="btn btn-primary btn-xs mb-1" onclick="random_choice_modal.showModal()">random choice</button>
-        
+        <button class="btn btn-primary btn-xs mb-1" onclick="random_sample_modal.showModal()">random sample</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="try_and_except_modal.showModal()">Try/Except Blocks</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="coloured_text_modal.showModal()">Coloured Text</button>
+        <button class="btn btn-primary btn-xs mb-1" onclick="test_modal.showModal()">Test Modal</button>
 
       </p>
     </div>
@@ -222,6 +231,14 @@ layout: brython
     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-5 w-5  inline-block" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     The cheatsheet is a work in progress. <a class="text-accent" href="https://github.com/codefez/codefez.github.io/blob/main/readme.md" target="_blank" rel="noopener noreferrer">feel free to contribute</a>. :-)
   </p>
+  <p>Page loads: <span id="page_loads_py_cheatsheet_count"></span></p>
 </div>
 
 {% include python_modals.html  %}
+  <script>
+  {% if jekyll.environment == 'production' %}
+    document.addEventListener("DOMContentLoaded", () => {
+      handleCounter('page_loads/py_cheatsheet', 'increment', 'page_loads_py_cheatsheet_count'); 
+    });
+  {% endif %}
+  </script>

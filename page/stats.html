@@ -1,0 +1,122 @@
+---
+layout: default
+---
+
+<h1 class="text-center text-xl"> Site Stats  </h1>
+<br>
+
+<div class="px-2 py-2">
+  <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
+    <div class="card bg-primary text-primary-content">
+      <div class="card-body">
+        <h2 class="card-title">Most Visited Pages</h2>
+        <div>
+          <ul id="popular-pages"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-primary text-primary-content">
+      <div class="card-body">
+        <h2 class="card-title">Most Downloaded Files</h2>
+        <div>
+          <ul id="popular-downloads"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  
+  function loadStats() {
+    // Fetch and display top 10 popular pages
+    db.ref('page_loads')
+      .orderByValue()
+      .limitToLast(10)
+      .once('value')
+      .then((snapshot) => {
+        const pagesList = document.getElementById('popular-pages');
+        let pagesArray = [];
+
+        snapshot.forEach((childSnapshot) => {
+          pagesArray.push({
+            url: childSnapshot.key.replace(/_/g, ' '),  // Replace underscores with spaces
+            count: childSnapshot.val()
+          });
+        });
+
+        // Sort by count (descending)
+        pagesArray.sort((a, b) => b.count - a.count);
+
+        // Display results
+        pagesList.innerHTML = '';
+        pagesArray.forEach((page) => {
+          pagesList.innerHTML += `
+          <li class="flex items-center gap-2">
+            <div>
+              <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor">
+                  <path d="M6 3L20 12 6 21 6 3z"></path>
+                </g>
+              </svg>
+            </div>
+            <div>${page.url}: ${page.count} views</div>
+          </li>`;
+        });
+      })
+      .catch((error) => {
+        console.error('Error fetching popular pages:', error);
+        document.getElementById('popular-pages').innerHTML = '<li>Error loading page stats</li>';
+      });
+
+    // Fetch and display popular downloads
+    db.ref('downloads').once('value').then((snapshot) => {
+      const downloadsData = snapshot.val();
+      const downloadsList = document.getElementById('popular-downloads');
+      const allDownloads = [];
+
+      if (downloadsData) {
+        // Flatten the nested structure
+        for (const section in downloadsData) {
+          for (const fileName in downloadsData[section]) {
+            const count = downloadsData[section][fileName];
+            allDownloads.push({
+              path: `${section}/${fileName}`.replace(/_/g, ' '),
+              count: typeof count === 'object' ? (count.count || 0) : count
+            });
+          }
+        }
+
+        // Sort by count (descending) and get top 10
+        allDownloads.sort((a, b) => b.count - a.count);
+
+        // Display results
+        downloadsList.innerHTML = '';
+        allDownloads.slice(0, 10).forEach((download) => {
+          downloadsList.innerHTML += `
+          <li class="flex items-center gap-2">
+            <div>
+              <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor">
+                  <path d="M6 3L20 12 6 21 6 3z"></path>
+                </g>
+              </svg>
+            </div>
+            <div>${download.path}: ${download.count} downloads</div>
+          </li>`;
+        });
+      } else {
+        downloadsList.innerHTML = '<li>No download data available</li>';
+      }
+    }).catch((error) => {
+      console.error('Error fetching downloads:', error);
+      document.getElementById('popular-downloads').innerHTML = '<li>Error loading download stats</li>';
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Wait a moment to ensure Firebase is initialized
+    setTimeout(loadStats, 500);
+  });
+</script>
