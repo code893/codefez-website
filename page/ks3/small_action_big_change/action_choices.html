@@ -1,0 +1,1265 @@
+---
+layout: default
+---
+
+<div class="text-sm breadcrumbs">
+    <ul>
+      <li>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-4 h-4 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+          <a href="/page/ks3.html">KS3 Home</a>
+        </a>
+      </li> 
+      <li>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-4 h-4 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+          <a href="/page/ks3/yr8-t3.html">Year 8 Term 6</a>
+        </a>
+      </li> 
+      <li>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-4 h-4 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+          Project Brief
+        </a>
+      </li> 
+      
+    </ul>
+</div>
+<br>
+
+<div class="mb-4">
+  <button class="btn btn-sm" onclick="filterList('all')">All</button>
+  <button class="btn btn-sm bg-green-50 text-green-900 border-none hover:bg-green-100 hover:text-green-900" onclick="filterList('Environment')">Environment</button>
+  <button class="btn btn-sm bg-blue-50 text-blue-900 border-none hover:bg-blue-100 hover:text-blue-900" onclick="filterList('Education')">Education</button>
+  <button class="btn btn-sm bg-gray-50 text-gray-900 border-none hover:bg-gray-100 hover:text-gray-900" onclick="filterList('Technology')">Technology</button>
+  <button class="btn btn-sm bg-teal-50 text-teal-900 border-none hover:bg-teal-100 hover:text-teal-900" onclick="filterList('Wellbeing')">Wellbeing</button>
+  <button class="btn btn-sm bg-orange-50 text-orange-900 border-none hover:bg-orange-100 hover:text-orange-900" onclick="filterList('Travel')">Travel</button>
+  <button class="btn btn-sm bg-lime-50 text-lime-900 border-none hover:bg-lime-100 hover:text-lime-900" onclick="filterList('Food')">Food</button>
+  <button class="btn btn-sm bg-purple-50 text-purple-900 border-none hover:bg-purple-100 hover:text-purple-900" onclick="filterList('Creativity')">Creativity</button>
+  <button class="btn btn-sm bg-red-50 text-red-900 border-none hover:bg-red-100 hover:text-red-900" onclick="filterList('Health')">Health</button>
+  <button class="btn btn-sm bg-community-50 text-community-900 border-none hover:bg-community-100 hover:text-community-900" onclick="filterList('Community')">Community</button>
+  <button class="btn btn-sm bg-politics-50 text-politics-900 border-none hover:bg-politics-100 hover:text-politics-900" onclick="filterList('Politics')">Politics</button>
+  <button class="btn btn-sm bg-work-50 text-work-900 border-none hover:bg-work-100 hover:text-work-900" onclick="filterList('Work')">Work</button>
+</div>
+
+<ul id="actionList" class="list bg-base-100 rounded-box shadow-md">
+  <!-- List of all 130 actions -->
+  <!-- Each item includes: Number, Emoji icon by category, Action text, Category -->
+
+  <!-- Category Colors -->
+  <!-- Environment: green-50, Education: blue-50, Community: yellow-50, Culture: pink-50, Health: red-50 -->
+  <!-- Technology: gray-50, Wellbeing: teal-50, Food: lime-50, Work: indigo-50, Travel: orange-50 -->
+  <!-- Creativity: purple-50, Politics: rose-50 -->
+
+  <li class="p-4 pb-2 text-xl opacity-60 tracking-wide">130 Actions to Change the World</li>
+
+  <li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">001</div>
+  <div class="text-2xl">🌍</div>
+  <div class="list-col-grow">
+    <div>Decline plastic bags wherever possible</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-blue-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">002</div>
+  <div class="text-2xl">📚</div>
+  <div class="list-col-grow">
+    <div>Read a story with a child</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">003</div>
+  <div class="text-2xl">💡</div>
+  <div class="list-col-grow">
+    <div>Fit at least one energy-saving light bulb</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-gray-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">004</div>
+  <div class="text-2xl">📱</div>
+  <div class="list-col-grow">
+    <div>Recycle your mobile phone</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Technology</div>
+  </div>
+  
+</li>
+<li class="list-row bg-teal-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">005</div>
+  <div class="text-2xl">😊</div>
+  <div class="list-col-grow">
+    <div>Smile and smile back</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Wellbeing</div>
+  </div>
+  
+</li>
+<li class="list-row bg-orange-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">006</div>
+  <div class="text-2xl">🚌</div>
+  <div class="list-col-grow">
+    <div>Take public transport when you can</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Travel</div>
+  </div>
+  
+</li>
+<li class="list-row bg-gray-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">007</div>
+  <div class="text-2xl">📄</div>
+  <div class="list-col-grow">
+    <div>Use both sides of the paper</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Technology</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">008</div>
+  <div class="text-2xl">💡</div>
+  <div class="list-col-grow">
+    <div>Turn off unnecessary lights</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-gray-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">009</div>
+  <div class="text-2xl">📰</div>
+  <div class="list-col-grow">
+    <div>Recycle your newspapers</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Technology</div>
+  </div>
+  
+</li>
+<li class="list-row bg-lime-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">010</div>
+  <div class="text-2xl">🛍️</div>
+  <div class="list-col-grow">
+    <div>Buy fair trade products</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Food</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">011</div>
+  <div class="text-2xl">🔌</div>
+  <div class="list-col-grow">
+    <div>Switch off appliances at the mains</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">012</div>
+  <div class="text-2xl">💧</div>
+  <div class="list-col-grow">
+    <div>Turn off the tap while brushing your teeth</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">013</div>
+  <div class="text-2xl">☕</div>
+  <div class="list-col-grow">
+    <div>Use a mug instead of a plastic cup</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-red-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">014</div>
+  <div class="text-2xl">🩸</div>
+  <div class="list-col-grow">
+    <div>Give blood</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Health</div>
+  </div>
+  
+</li>
+<li class="list-row bg-gray-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">015</div>
+  <div class="text-2xl">📰</div>
+  <div class="list-col-grow">
+    <div>Recycle waste paper</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Technology</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">016</div>
+  <div class="text-2xl">💧</div>
+  <div class="list-col-grow">
+    <div>Don't overfill your kettle</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-teal-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">017</div>
+  <div class="text-2xl">🫂</div>
+  <div class="list-col-grow">
+    <div>Hug someone</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Wellbeing</div>
+  </div>
+  
+</li>
+<li class="list-row bg-lime-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">018</div>
+  <div class="text-2xl">🍳</div>
+  <div class="list-col-grow">
+    <div>Cook a meal from scratch</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Food</div>
+  </div>
+  
+</li>
+<li class="list-row bg-purple-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">019</div>
+  <div class="text-2xl">✍️</div>
+  <div class="list-col-grow">
+    <div>Write to someone who inspired you</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Creativity</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">020</div>
+  <div class="text-2xl">🌱</div>
+  <div class="list-col-grow">
+    <div>Plant something</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-lime-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">021</div>
+  <div class="text-2xl">🍎</div>
+  <div class="list-col-grow">
+    <div>Buy local produce</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Food</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">022</div>
+  <div class="text-2xl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path fill-rule="evenodd" d="M3 3.75C3 3.336 3.336 3 3.75 3h16.5c.414 0 .75.336.75.75v16.5c0 .414-.336.75-.75.75H3.75c-.414 0-.75-.336-.75-.75V3.75zm9 10.5a1 1 0 00-1-1h-3a1 1 0 10-1 1v3a1 1 0 101 1h3a1 1 0 001-1v-3zM12 15.75a1 1 0 011-1h.01a1 1 0 110 2h-.01a1 1 0 01-1-1z" clip-rule="evenodd" /></svg></div>
+  <div class="list-col-grow">
+    <div>Recycle your glass</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">023</div>
+  <div class="text-2xl">💧</div>
+  <div class="list-col-grow">
+    <div>Use a reusable water bottle</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-orange-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">024</div>
+  <div class="text-2xl">🚶‍♀️</div>
+  <div class="list-col-grow">
+    <div>Walk or cycle short journeys</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Travel</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">025</div>
+  <div class="text-2xl">🤝</div>
+  <div class="list-col-grow">
+    <div>Share your skills</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">026</div>
+  <div class="text-2xl">⏳</div>
+  <div class="list-col-grow">
+    <div>Volunteer your time</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">027</div>
+  <div class="text-2xl">❤️</div>
+  <div class="list-col-grow">
+    <div>Support a local charity</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">028</div>
+  <div class="text-2xl">👚</div>
+  <div class="list-col-grow">
+    <div>Donate unwanted clothes</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">029</div>
+  <div class="text-2xl">👕</div>
+  <div class="list-col-grow">
+    <div>Buy second-hand items</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-lime-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">030</div>
+  <div class="text-2xl">🗑️</div>
+  <div class="list-col-grow">
+    <div>Compost your food waste</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Food</div>
+  </div>
+  
+</li>
+<li class="list-row bg-gray-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">031</div>
+  <div class="text-2xl">🔋</div>
+  <div class="list-col-grow">
+    <div>Use rechargeable batteries</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Technology</div>
+  </div>
+  
+</li>
+<li class="list-row bg-gray-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">032</div>
+  <div class="text-2xl">✉️</div>
+  <div class="list-col-grow">
+    <div>Reduce junk mail</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Technology</div>
+  </div>
+  
+</li>
+<li class="list-row bg-gray-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">033</div>
+  <div class="text-2xl">🛠️</div>
+  <div class="list-col-grow">
+    <div>Fix something instead of replacing it</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Technology</div>
+  </div>
+  
+</li>
+<li class="list-row bg-blue-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">034</div>
+  <div class="text-2xl">📚</div>
+  <div class="list-col-grow">
+    <div>Use a library</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">035</div>
+  <div class="text-2xl">🏘️</div>
+  <div class="list-col-grow">
+    <div>Support independent businesses</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-politics-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">036</div>
+  <div class="text-2xl">✉️</div>
+  <div class="list-col-grow">
+    <div>Write to your MP about an issue you care about</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Politics</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">037</div>
+  <div class="text-2xl">🚿</div>
+  <div class="list-col-grow">
+    <div>Take shorter showers</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">038</div>
+  <div class="text-2xl">🍽️</div>
+  <div class="list-col-grow">
+    <div>Use cloth napkins</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">039</div>
+  <div class="text-2xl">⚡</div>
+  <div class="list-col-grow">
+    <div>Buy energy-efficient appliances</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">040</div>
+  <div class="text-2xl">🍞</div>
+  <div class="list-col-grow">
+    <div>Donate to a food bank</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-education-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">041</div>
+  <div class="text-2xl">🧑‍🏫</div>
+  <div class="list-col-grow">
+    <div>Mentor someone</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-culture-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">042</div>
+  <div class="text-2xl">🎨</div>
+  <div class="list-col-grow">
+    <div>Support local artists</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Culture</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">043</div>
+  <div class="text-2xl">🎪</div>
+  <div class="list-col-grow">
+    <div>Attend a community event</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-lime-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">044</div>
+  <div class="text-2xl">🥩</div>
+  <div class="list-col-grow">
+    <div>Reduce meat consumption</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Food</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">045</div>
+  <div class="text-2xl">🧴</div>
+  <div class="list-col-grow">
+    <div>Use eco-friendly cleaning products</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">046</div>
+  <div class="text-2xl">☀️</div>
+  <div class="list-col-grow">
+    <div>Support renewable energy</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-education-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">047</div>
+  <div class="text-2xl">🧠</div>
+  <div class="list-col-grow">
+    <div>Educate yourself on social issues</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-teal-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">048</div>
+  <div class="text-2xl">🧘</div>
+  <div class="list-col-grow">
+    <div>Practice mindfulness</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Wellbeing</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">049</div>
+  <div class="text-2xl">👋</div>
+  <div class="list-col-grow">
+    <div>Start a conversation with a stranger</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">050</div>
+  <div class="text-2xl">🤝</div>
+  <div class="list-col-grow">
+    <div>Help a neighbor</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-education-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">051</div>
+  <div class="text-2xl">📚</div>
+  <div class="list-col-grow">
+    <div>Donate books to a school or library</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-orange-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">052</div>
+  <div class="text-2xl">🚌</div>
+  <div class="list-col-grow">
+    <div>Use public transport more often</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Travel</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">053</div>
+  <div class="text-2xl">🧹</div>
+  <div class="list-col-grow">
+    <div>Participate in a local clean-up</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">054</div>
+  <div class="text-2xl">♻️</div>
+  <div class="list-col-grow">
+    <div>Reduce single-use plastics</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">055</div>
+  <div class="text-2xl">🛍️</div>
+  <div class="list-col-grow">
+    <div>Support ethical brands</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">056</div>
+  <div class="text-2xl">🧺</div>
+  <div class="list-col-grow">
+    <div>Use a clothesline instead of a dryer</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">057</div>
+  <div class="text-2xl">💧</div>
+  <div class="list-col-grow">
+    <div>Conserve water</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-blue-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">058</div>
+  <div class="text-2xl">📚</div>
+  <div class="list-col-grow">
+    <div>Educate others about sustainability</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-teal-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">059</div>
+  <div class="text-2xl">🙏</div>
+  <div class="list-col-grow">
+    <div>Practice gratitude daily</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Wellbeing</div>
+  </div>
+  
+</li>
+<li class="list-row bg-lime-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">060</div>
+  <div class="text-2xl">🧑‍🌾</div>
+  <div class="list-col-grow">
+    <div>Support local farmers</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Food</div>
+  </div>
+  
+</li>
+<li class="list-row bg-teal-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">061</div>
+  <div class="text-2xl">📵</div>
+  <div class="list-col-grow">
+    <div>Reduce screen time</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Wellbeing</div>
+  </div>
+  
+</li>
+<li class="list-row bg-rose-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">062</div>
+  <div class="text-2xl">🗳️</div>
+  <div class="list-col-grow">
+    <div>Encourage others to vote</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Politics</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">063</div>
+  <div class="text-2xl">🧑‍🌾</div>
+  <div class="list-col-grow">
+    <div>Participate in community gardening</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">064</div>
+  <div class="text-2xl">📄</div>
+  <div class="list-col-grow">
+    <div>Use less paper</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-red-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">065</div>
+  <div class="text-2xl">🧠</div>
+  <div class="list-col-grow">
+    <div>Support mental health initiatives</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Health</div>
+  </div>
+  
+</li>
+<li class="list-row bg-blue-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">066</div>
+  <div class="text-2xl">💡</div>
+  <div class="list-col-grow">
+    <div>Learn a new skill</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-teal-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">067</div>
+  <div class="text-2xl">✨</div>
+  <div class="list-col-grow">
+    <div>Share positive news</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Wellbeing</div>
+  </div>
+  
+</li>
+<li class="list-row bg-orange-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">068</div>
+  <div class="text-2xl">🚗</div>
+  <div class="list-col-grow">
+    <div>Reduce car usage</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Travel</div>
+  </div>
+  
+</li>
+<li class="list-row bg-teal-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">069</div>
+  <div class="text-2xl">👂</div>
+  <div class="list-col-grow">
+    <div>Practice active listening</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Wellbeing</div>
+  </div>
+  
+</li>
+<li class="list-row bg-blue-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">070</div>
+  <div class="text-2xl">🏫</div>
+  <div class="list-col-grow">
+    <div>Support local schools</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">071</div>
+  <div class="text-2xl">🛍️</div>
+  <div class="list-col-grow">
+    <div>Use reusable shopping bags</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-lime-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">072</div>
+  <div class="text-2xl">🗑️</div>
+  <div class="list-col-grow">
+    <div>Reduce food waste</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Food</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">073</div>
+  <div class="text-2xl">🐾</div>
+  <div class="list-col-grow">
+    <div>Support animal welfare</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-rose-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">074</div>
+  <div class="text-2xl">🗳️</div>
+  <div class="list-col-grow">
+    <div>Participate in local elections</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Politics</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">075</div>
+  <div class="text-2xl">💡</div>
+  <div class="list-col-grow">
+    <div>Use energy-efficient lighting</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">076</div>
+  <div class="text-2xl">💧</div>
+  <div class="list-col-grow">
+    <div>Support clean water initiatives</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-blue-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">077</div>
+  <div class="text-2xl">🧒</div>
+  <div class="list-col-grow">
+    <div>Educate children about the environment</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-teal-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">078</div>
+  <div class="text-2xl">❤️</div>
+  <div class="list-col-grow">
+    <div>Practice kindness daily</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Wellbeing</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">079</div>
+  <div class="text-2xl">🆘</div>
+  <div class="list-col-grow">
+    <div>Support disaster relief efforts</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">080</div>
+  <div class="text-2xl">❄️</div>
+  <div class="list-col-grow">
+    <div>Use less air conditioning</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">081</div>
+  <div class="text-2xl">✊</div>
+  <div class="list-col-grow">
+    <div>Support human rights organizations</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">082</div>
+  <div class="text-2xl">🔇</div>
+  <div class="list-col-grow">
+    <div>Reduce noise pollution</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-orange-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">083</div>
+  <div class="text-2xl">🚌</div>
+  <div class="list-col-grow">
+    <div>Support public transportation</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Travel</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">084</div>
+  <div class="text-2xl">☀️</div>
+  <div class="list-col-grow">
+    <div>Use natural light when possible</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-blue-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">085</div>
+  <div class="text-2xl">🏫</div>
+  <div class="list-col-grow">
+    <div>Support education for all</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">086</div>
+  <div class="text-2xl">💧</div>
+  <div class="list-col-grow">
+    <div>Reduce water usage</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-culture-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">087</div>
+  <div class="text-2xl">🏛️</div>
+  <div class="list-col-grow">
+    <div>Support local history and culture</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Culture</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">088</div>
+  <div class="text-2xl">🧴</div>
+  <div class="list-col-grow">
+    <div>Use eco-friendly products</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">089</div>
+  <div class="text-2xl">♀️</div>
+  <div class="list-col-grow">
+    <div>Support gender equality</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-orange-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">090</div>
+  <div class="text-2xl">🚗</div>
+  <div class="list-col-grow">
+    <div>Practice safe driving</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Travel</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">091</div>
+  <div class="text-2xl">💨</div>
+  <div class="list-col-grow">
+    <div>Support clean air initiatives</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">092</div>
+  <div class="text-2xl">♻️</div>
+  <div class="list-col-grow">
+    <div>Use less plastic wrap</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">093</div>
+  <div class="text-2xl"> 🕊️ </div>
+  <div class="list-col-grow">
+    <div>Support abolishing apartheid & advocate for a Free Palestine ✌🏼</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">094</div>
+  <div class="text-2xl">⚡</div>
+  <div class="list-col-grow">
+    <div>Reduce energy consumption</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">095</div>
+  <div class="text-2xl">🏕️</div>
+  <div class="list-col-grow">
+    <div>Support refugee assistance programs</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">096</div>
+  <div class="text-2xl">🚿</div>
+  <div class="list-col-grow">
+    <div>Use less hot water</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">097</div>
+  <div class="text-2xl">🤟</div>
+  <div class="list-col-grow">
+    <div>Support indigenous communities</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">098</div>
+  <div class="text-2xl">♻️</div>
+  <div class="list-col-grow">
+    <div>Practice recycling correctly</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">099</div>
+  <div class="text-2xl"> 👐🏼 </div>
+  <div class="list-col-grow">
+    <div>Support anti-poverty programs</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">100</div>
+  <div class="text-2xl">🍴</div>
+  <div class="list-col-grow">
+    <div>Use less disposable cutlery</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-blue-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">101</div>
+  <div class="text-2xl">🏫</div>
+  <div class="list-col-grow">
+    <div>Support accessible education</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">102</div>
+  <div class="text-2xl">🌃</div>
+  <div class="list-col-grow">
+    <div>Reduce light pollution</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">103</div>
+  <div class="text-2xl">🐅</div>
+  <div class="list-col-grow">
+    <div>Support wildlife conservation</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">104</div>
+  <div class="text-2xl">📦</div>
+  <div class="list-col-grow">
+    <div>Use less packaging</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">105</div>
+  <div class="text-2xl">☀️</div>
+  <div class="list-col-grow">
+    <div>Support clean energy research</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-lime-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">106</div>
+  <div class="text-2xl">🌿</div>
+  <div class="list-col-grow">
+    <div>Practice composting</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Food</div>
+  </div>
+  
+</li>
+<li class="list-row bg-work-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">107</div>
+  <div class="text-2xl">🧑‍💼</div>
+  <div class="list-col-grow">
+    <div>Support fair labor practices</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Work</div>
+  </div>
+  
+</li>
+<li class="list-row bg-orange-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">108</div>
+  <div class="text-2xl">⛽</div>
+  <div class="list-col-grow">
+    <div>Use less gasoline</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Travel</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">109</div>
+  <div class="text-2xl">🏘️</div>
+  <div class="list-col-grow">
+    <div>Support affordable housing</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-teal-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">110</div>
+  <div class="text-2xl">📵</div>
+  <div class="list-col-grow">
+    <div>Practice digital detox</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Wellbeing</div>
+  </div>
+  
+</li>
+<li class="list-row bg-red-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">111</div>
+  <div class="text-2xl">🧠</div>
+  <div class="list-col-grow">
+    <div>Support mental health awareness</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Health</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">112</div>
+  <div class="text-2xl">💡</div>
+  <div class="list-col-grow">
+    <div>Use less electricity</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">113</div>
+  <div class="text-2xl">🏘️</div>
+  <div class="list-col-grow">
+    <div>Support community centers</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-orange-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">114</div>
+  <div class="text-2xl">✈️</div>
+  <div class="list-col-grow">
+    <div>Practice eco-friendly travel</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Travel</div>
+  </div>
+  
+</li>
+<li class="list-row bg-blue-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">115</div>
+  <div class="text-2xl">📚</div>
+  <div class="list-col-grow">
+    <div>Support local libraries</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">116</div>
+  <div class="text-2xl">🧻</div>
+  <div class="list-col-grow">
+    <div>Use less paper towels</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-culture-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">117</div>
+  <div class="text-2xl">🎭</div>
+  <div class="list-col-grow">
+    <div>Support arts and culture</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Culture</div>
+  </div>
+  
+</li>
+<li class="list-row bg-purple-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">118</div>
+  <div class="text-2xl">👗</div>
+  <div class="list-col-grow">
+    <div>Practice sustainable fashion</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Creativity</div>
+  </div>
+  
+</li>
+<li class="list-row bg-blue-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">119</div>
+  <div class="text-2xl">🌍</div>
+  <div class="list-col-grow">
+    <div>Support environmental education</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Education</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">120</div>
+  <div class="text-2xl">💧</div>
+  <div class="list-col-grow">
+    <div>Use less bottled water</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">121</div>
+  <div class="text-2xl">🌊</div>
+  <div class="list-col-grow">
+    <div>Support clean oceans initiatives</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-teal-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">122</div>
+  <div class="text-2xl">✨</div>
+  <div class="list-col-grow">
+    <div>Practice minimalism</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Wellbeing</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">123</div>
+  <div class="text-2xl">⚽</div>
+  <div class="list-col-grow">
+    <div>Support local sports teams</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">124</div>
+  <div class="text-2xl">🧪</div>
+  <div class="list-col-grow">
+    <div>Use less synthetic chemicals</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-red-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">125</div>
+  <div class="text-2xl">🏥</div>
+  <div class="list-col-grow">
+    <div>Support community health programs</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Health</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">126</div>
+  <div class="text-2xl">⚡</div>
+  <div class="list-col-grow">
+    <div>Practice energy conservation</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-culture-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">127</div>
+  <div class="text-2xl">🎶</div>
+  <div class="list-col-grow">
+    <div>Support local music events</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Culture</div>
+  </div>
+  
+</li>
+<li class="list-row bg-green-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">128</div>
+  <div class="text-2xl">📦</div>
+  <div class="list-col-grow">
+    <div>Use less non-recyclable materials</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Environment</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">129</div>
+  <div class="text-2xl">🕊️</div>
+  <div class="list-col-grow">
+    <div>Support global peace efforts</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+<li class="list-row bg-community-50">
+  <div class="text-4xl font-thin opacity-30 tabular-nums">130</div>
+  <div class="text-2xl">🌟</div>
+  <div class="list-col-grow">
+    <div>Do something for nothing</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Community</div>
+  </div>
+  
+</li>
+</ul>
+
+<div class="mb-20 mt-4">
+  <p>
+    <div role="alert" class="alert alert-warning">
+      <div class="avatar">
+        <div class="mask mask-squircle w-24">
+          <img src="https://github.com/BethsGrammar/learn-python3/raw/master/notion_avatar2.png" />
+        </div>
+      </div>
+      <span>As mentioned <a class="text-error" href="https://codefez.github.io/page/ks3/yr8-t3.html" target="_blank" rel="noopener noreferrer">here</a>,
+         the idea for this unit of work is taken from Shift Design with some small edits. 
+        <br>The actions listed here have been taken from the website wearewhatwedo.org 
+        <a class="text-error" href="https://web.archive.org/web/20131104233240/http://actiontracker.org.uk/actions/" 
+          target="_blank" rel="noopener noreferrer">using the wayback machine</a>. 
+      </span>
+    </div>
+  </p>
+
+</div>
+
+
+<script>
+  function filterList(category) {
+      const list = document.getElementById('actionList');
+      const items = list.querySelectorAll('.list-row');
+
+      items.forEach(item => {
+          const categoryElement = item.querySelector('.opacity-60');
+          if (categoryElement) {
+              const itemCategory = categoryElement.textContent.trim();
+              if (category === 'all' || itemCategory === category) {
+                  item.style.display = 'flex'; // Or 'grid', depending on your layout
+              } else {
+                  item.style.display = 'none';
+              }
+          }
+      });
+  }
+</script>
